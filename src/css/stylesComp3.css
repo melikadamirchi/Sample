@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8; /* Light background for a clean look */
+  color: #333; /* Standard text color */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px; /* Container width for responsiveness */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding for inner spacing */
+}
+
+.card {
+  background-color: #ffffff; /* Card background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  margin-bottom: 20px; /* Space between cards */
+  padding: 20px; /* Inner spacing */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Change shadow on hover */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0; /* Remove default margins */
+  color: #444; /* Grey text color for headings */
+}
+
+h1 {
+  font-size: 36px; /* Large Header */
+  margin-bottom: 10px; /* Space below */
+}
+
+h2 {
+  font-size: 28px; /* Medium Header */
+  margin-top: 15px; /* Space above */
+  margin-bottom: 5px; /* Space below */
+}
+
+h3 {
+  font-size: 22px; /* Smaller Header */
+}
+
+p {
+  line-height: 1.6; /* Better readability */
+  margin: 10px 0; /* Space above and below paragraphs */
+}
+
+.button {
+  background-color: #007bff; /* Primary button color */
+  color: #ffffff; /* Text color in button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for button */
+  cursor: pointer; /* Show pointer on hover */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+.list {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+}
+
+.list-item {
+  background-color: #e9ecef; /* Light background for list items */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Padding for better spacing */
+  margin: 5px 0; /* Space between list items */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.list-item:hover {
+  background-color: #d1d5db; /* Darker background on hover */
+}
