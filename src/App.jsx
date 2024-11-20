@@ -11,15 +11,15 @@ import Comp9 from "./Comp9";
 import Comp10 from "./Comp10";
 import { Navbar } from "./pages/Navbar";
 import "./css/stylesComp3.css";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 function App() {
   return (
     <>
       <HashRouter>
         <Navbar></Navbar>
-        <Switch>
-          <Route path="/" element={<Home></Home>}></Route>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/Comp1" element={<Comp1 />}></Route>
           <Route path="/Comp2" element={<Comp2 />}></Route>
           <Route path="/Comp3" element={<Comp3 />}></Route>
@@ -31,7 +31,7 @@ function App() {
           <Route path="/Comp9" element={<Comp9 />}></Route>
           <Route path="/Comp10" element={<Comp10 />}></Route>
           <Route path="*" element={<h5>Nothing available</h5>}></Route>
-        </Switch>
+        </Routes>
       </HashRouter>
     </>
   );
