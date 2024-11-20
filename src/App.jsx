@@ -11,12 +11,12 @@ import Comp9 from "./Comp9";
 import Comp10 from "./Comp10";
 import { Navbar } from "./pages/Navbar";
 import "./css/stylesComp3.css";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./pages/Home";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar></Navbar>
         <Switch>
           <Route path="/" element={<Home></Home>}></Route>
@@ -32,7 +32,7 @@ function App() {
           <Route path="/Comp10" element={<Comp10 />}></Route>
           <Route path="*" element={<h5>Nothing available</h5>}></Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
