@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages  --dist=build --user=<melikadamirchi> --email=<melikadamirchi2000@gmail.com>",
+    "deploy": "gh-pages  --dist=build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
